@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <meta name="description" content="Register for a new account">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="container">
+        <h2>Register</h2>
+        <form id="registrationForm" novalidate>
+            <div class="input-group">
+                <input type="text" id="username" required autocomplete="off" placeholder=" ">
+                <label for="username">Username</label>
+                <div class="error-message">Username must be at least 3 characters</div>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" required autocomplete="off" placeholder=" ">
+                <label for="email">Email Address</label>
+                <div class="error-message">Please enter a valid email address</div>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="password" required autocomplete="off" placeholder=" ">
+                <label for="password">Password</label>
+                <div class="error-message">Password must be at least 8 characters</div>
+            </div>
+            
+            <div class="input-group">
+                <input type="password" id="confirmPassword" required autocomplete="off" placeholder=" ">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="error-message">Passwords do not match</div>
+            </div>
+            
+            <button type="submit" class="submit-btn" id="submitBtn">Create Account</button>
+            
+            <div class="login-link">
+                Already have an account? <a href="#">Login here</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
